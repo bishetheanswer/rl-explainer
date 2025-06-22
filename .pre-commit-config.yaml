@@ -1,0 +1,33 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.12.0
+    hooks:
+      # Run the linter.
+      - id: ruff
+        name: "ruff"
+        files: .*\.py$
+      # Run the linter for imports and fix them.
+      - id: ruff-check
+        name: "ruff-imports"
+        files: .*\.py$
+        args: ["--select", "I", "--fix"]
+      # Run the formatter.
+      - id: ruff-format
+        name: "ruff-format"
+        files: .*\.py$
+
+  - repo: https://github.com/python-poetry/poetry
+    rev: 2.1.3
+    hooks:
+      # Check pyproject.toml and its integrity with poetry.lock.
+      - id: poetry-check
+        name: "poetry-check"
+      - id: poetry-lock
+        name: "poetry-lock"
