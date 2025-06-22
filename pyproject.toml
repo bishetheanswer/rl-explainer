@@ -8,6 +8,10 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "qwen-vl-utils (>=0.0.11,<0.0.12)",
+    "torchvision (>=0.22.1,<0.23.0)",
+    "transformers (>=4.52.4,<5.0.0)",
+    "accelerate (>=1.8.1,<2.0.0)"
 ]
 
 [tool.poetry]
