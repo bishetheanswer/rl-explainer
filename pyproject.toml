@@ -13,7 +13,13 @@ dependencies = [
     "transformers (>=4.52.4,<5.0.0)",
     "accelerate (>=1.8.1,<2.0.0)",
     "google-genai (>=1.21.1,<2.0.0)",
-    "python-dotenv (>=1.1.0,<2.0.0)"
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "ale-py (>=0.11.1,<0.12.0)",
+    "gymnasium (>=1.1.1,<2.0.0)",
+    "stable-baselines3[extra] (>=2.6.0,<3.0.0)",
+    "huggingface-sb3 (>=3.0,<4.0)",
+    "gym (>=0.26.2,<0.27.0)",
+    "shimmy (>=2.0.0,<3.0.0)"
 ]
 
 [tool.poetry]

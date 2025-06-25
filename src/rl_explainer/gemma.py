@@ -10,7 +10,7 @@ login(hf_token)
 pipe = pipeline(
     "image-text-to-text",
     model="google/gemma-3-4b-it",
-    device="cuda",
+    device="mps",
     torch_dtype=torch.bfloat16,
 )
 
