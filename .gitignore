@@ -2,3 +2,7 @@ __pycache__/
 .env
 .ropeproject
 .ruff_cache
+*.mp4
+*.pem
+*.zip
+.DS_Store
