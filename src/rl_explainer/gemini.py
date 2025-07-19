@@ -2,7 +2,7 @@ from rl_explainer.breakout_chat import GeminiBreakoutChat
 
 
 def chat() -> None:
-    chat = GeminiBreakoutChat(model="models/gemini-2.0-flash")
+    chat = GeminiBreakoutChat(model="models/gemini-2.5-pro")
     chat.generate_initial_analysis()
     while True:
         chat.ask()
